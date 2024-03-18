@@ -83,4 +83,24 @@ export class ProjectsService {
   getProjects(){
     return this.projects;
   }
+
+  getProjectsByFilter(filterTags : Tags[]){
+    const filteredProject : Project[] = [];
+
+    this.projects.forEach(function(project) {
+      let foundAll = true;
+      filterTags.forEach(function(filterTag) {
+        console.log(filterTag)
+        if(project.tags.includes(filterTag) == false){
+          foundAll = false;
+        }
+      });
+      if(foundAll){
+        filteredProject.push(project)
+      }
+    });
+    
+    return filteredProject;
+
+  }
 }
