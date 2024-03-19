@@ -91,7 +91,7 @@ export class ProjectsService {
       let foundAll = true;
       filterTags.forEach(function(filterTag) {
         console.log(filterTag)
-        if(project.tags.includes(filterTag) == false){
+        if(!project.tags.includes(filterTag)){
           foundAll = false;
         }
       });
@@ -99,7 +99,7 @@ export class ProjectsService {
         filteredProject.push(project)
       }
     });
-    
+
     return filteredProject;
 
   }

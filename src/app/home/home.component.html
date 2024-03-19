@@ -1,36 +1,36 @@
 <div class="container">
   <div class="row">
     <!--About Me -->
-    <div class="col-lg shadow border m-1">
+    <div class="col-lg shadow border m-1 card-hover">
       <div class="text-center">
-        <h4>About Me</h4>
-        <img src="./assets/personal_portfolio_image.jpg" alt="personal_portfolio_image" width="256" height="256"
-             class="rounded-circle">
-        <p>In interdum euismod sapien, non ullamcorper orci scelerisque ac. Quisque sodales non odio sit amet vehicula.
-          Proin gravida ligula libero, sed ultricies turpis rutrum eget. Class aptent taciti sociosqu ad litora torquent
-          per conubia nostra, per inceptos himenaeos. Duis quis aliquam dolor, quis venenatis nulla. Praesent dapibus
-          turpis eu ipsum placerat aliquam. Aenean sit amet purus dolor. Ut sit amet vehicula enim. Mauris accumsan
-          mauris vitae mollis semper. Aenean fringilla erat vel lacus mattis consequat. Mauris a nisi at tellus aliquet
-          tempor. Fusce eu nisl sodales, lacinia enim vitae, pellentesque nisi. Vivamus et mi vel arcu condimentum
-          commodo. Integer malesuada efficitur accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec porta lacus et tempus aliquet.</p>
+        <h1 style="color: white">About Me</h1>
+        <img src="./assets/personal_portfolio_image.jpg" alt="personal_portfolio_image" width="256" height="256" class="rounded-circle">
+        <br/><br/>
+          <p class="card-p" style="color: white">In interdum euismod sapien, non ullamcorper orci scelerisque ac. Quisque sodales non odio sit amet vehicula.
+            Proin gravida ligula libero, sed ultricies turpis rutrum eget. Class aptent taciti sociosqu ad litora torquent
+            per conubia nostra, per inceptos himenaeos. Duis quis aliquam dolor, quis venenatis nulla. Praesent dapibus
+            turpis eu ipsum placerat aliquam. Aenean sit amet purus dolor. Ut sit amet vehicula enim. Mauris accumsan
+            mauris vitae mollis semper. Aenean fringilla erat vel lacus mattis consequat. Mauris a nisi at tellus aliquet
+            tempor. Fusce eu nisl sodales, lacinia enim vitae, pellentesque nisi. Vivamus et mi vel arcu condimentum
+            commodo. Integer malesuada efficitur accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Donec porta lacus et tempus aliquet.</p>
       </div>
     </div>
     <!--Featured Project -->
-    <div class="col-lg shadow border m-1">
+    <div class="col-lg shadow border m-1 card-hover">
       <div class="text-center">
-        <h4>Featured Project</h4>
-        <h4>{{featuredProject.name}}</h4>
+        <h4 style="color: white">Featured Project</h4>
+        <h4 style="color: white">{{featuredProject.name}}</h4>
         <br/>
         <br/>
         <carousel>
           <div *ngFor="let picture of featuredProject.pictures">
-            <slide><img src="{{picture}}" alt="Slide 1" style="display: block ; width: 100%"></slide>
+            <slide><img src="{{picture}}" alt="Slide 1" style="display: block ; width: 20% ; margin-left: 40% ; padding-bottom: 15%"></slide>
           </div>
         </carousel>
-        <h3 class="mt-2">Description</h3>
-        <p>{{featuredProject.description}}</p>
-        <p>You can find this project on my <a href="{{featuredProject.link}}" target="_blank">github</a> page</p>
+<!--        <h3 style="color: white" class="mt-2">Description</h3>-->
+<!--        <p style="color: white">{{featuredProject.description}}</p>-->
+        <p style="color: white">You can find this project on my <a href="{{featuredProject.link}}" target="_blank">github</a> page</p>
         <br/>
         <div class="d-flex flex-wrap">
           <div *ngFor="let tag of featuredProject.tags">

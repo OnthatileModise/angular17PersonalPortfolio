@@ -1,4 +1,31 @@
-.container{
-    background-image: url("../../assets/meeseeks_can_do_rick_morty.gif");
 
+.card-hover{
+  background-color: black;
+  transition: width 2s , height 2s ;
+  height: 47vh;
+}
+
+.card-hover:hover{
+  height: 73vh;
+}
+
+.card-hover .card-p {
+  display: none;
+  animation: fadeOut 1s;
+  transition: opacity 0.5s;
+}
+
+.card-hover :hover .card-p  {
+  display: flex;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
