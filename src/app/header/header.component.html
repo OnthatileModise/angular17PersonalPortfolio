@@ -1,20 +1,18 @@
-<div class="jumbotron" style="position: relative;">
-  <div class="text-center">
-    <h1 class="display-4">Onthatile Modise</h1>
-    <h3>Software Engineer</h3>
+<header id="header" class="fixed-top sticky">
+  <div class="scroll-watcher" id="scroll-watcher"></div>
+  <div class="container d-flex align-items-center justify-content-between">
+    <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto {{activeHome}}" (click)="setActiveHome()" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto {{activeAbout}}" (click)="setActiveAbout()" href="#about-section" >About</a></li>
+        <li><a class="nav-link scrollto {{activeServices}}" (click)="setActiveServices()" href="#services">Services</a></li>
+        <li><a class="nav-link scrollto {{activeWork}}" (click)="setActiveWork()" href="#work">Work</a></li>
+        <li><a class="nav-link scrollto {{activePortfolio}}" (click)="setActivePortfolio()" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link scrollto {{activeContact}}" (click)="setActiveContact()" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
   </div>
+</header>
 
-  <div style="position: absolute; bottom: 5px; right: 10px;">
-    <a href="//linkedin.com" target="_blank" class="">
-      <img src="" width="24" height="24" alt="" class="rounded-circle me-2"/>
-    </a>
-
-    <a href="//linkedin.com" target="_blank" class="">
-        <img src="" width="24" height="24" alt="" class="rounded-circle me-2"/>
-    </a>
-
-    <a href="//linkedin.com" target="_blank" class="">
-        <img src="" width="24" height="24" alt="" class="rounded-circle me-2"/>
-    </a>
-  </div>
-</div>

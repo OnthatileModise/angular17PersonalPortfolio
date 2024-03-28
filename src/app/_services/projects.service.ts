@@ -72,35 +72,8 @@ export class ProjectsService {
 
   constructor() {}
 
-  getProjectById(id : number) : Project {
-    const project = this.projects.find(project => project.id === id);
-    if (project === undefined){
-      throw new TypeError("There is no project of type id" + id);
-    }
-      return project;
-  }
-
   getProjects(){
     return this.projects;
   }
 
-  getProjectsByFilter(filterTags : Tags[]){
-    const filteredProject : Project[] = [];
-
-    this.projects.forEach(function(project) {
-      let foundAll = true;
-      filterTags.forEach(function(filterTag) {
-        console.log(filterTag)
-        if(!project.tags.includes(filterTag)){
-          foundAll = false;
-        }
-      });
-      if(foundAll){
-        filteredProject.push(project)
-      }
-    });
-
-    return filteredProject;
-
-  }
 }

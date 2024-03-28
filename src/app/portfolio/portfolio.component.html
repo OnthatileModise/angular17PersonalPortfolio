@@ -1,40 +1,35 @@
-<div class="container">
-  <div class="mb-2">
-    <div>
-      <button class="btn btn-outline-primary mb-2 me-3" (click) = "isCollapse = !isCollapse">Filter</button>
-      <button class="btn btn-outline-secondary mb-2" (click)="resetFilters()" [hidden]="!filtering" >Reset Filters</button>
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Portfolio</h3>
+          <p class="subtitle-a">My Projects and Certifications</p>
+          <div class="line-mf"></div>
+        </div>
+      </div>
     </div>
-     <div [ngbCollapse]="isCollapse" > <!--Add [isAnimated]="true" -->
-        <div class="border mb-2 shadow-sm" style="width: 250px;">
-            <form>
-              <div class="row mx-0">
-                <div class="col">
-                  <small><b>Langauges : </b></small>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="typeScript" (change)="filter()" name="TypeScript">
-                      <label class="form-check-label small">TypeScript</label>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col">
-                  <small><b>Frame Works : </b></small>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="angular" (change)="filter()" name="Angular">
-                      <label class="form-check-label small">Angular</label>
-                    </div>
-                </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let project of projects">
+        <div class="work-box">
+          <a href="./assets/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/work-1.jpg" alt="" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">{{project?.name}}</h2>
+                <div class="w-more">
+                  <span class="w-category">{{project?.link}}</span> / <span class="w-date">{{project?.description}}</span>
                 </div>
               </div>
-            </form>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div *ngFor="let project of projects" class="col-lg-4 mb-4" style="max-width: 380px; min-width: 300px">
-        <app-project-card [project]="project"></app-project-card>
-    </div>
-  </div>
-</div>
+</section><!-- End Portfolio Section -->
