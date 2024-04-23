@@ -1,18 +1,18 @@
-<header id="header" class="fixed-top sticky">
-  <div class="scroll-watcher" id="scroll-watcher"></div>
-  <div class="container d-flex align-items-center justify-content-between">
-    <h1 class="logo"><a href="index.html">Portfolio</a></h1>
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto {{activeHome}}" (click)="setActiveHome()" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto {{activeAbout}}" (click)="setActiveAbout()" href="#about-section" >About</a></li>
-        <li><a class="nav-link scrollto {{activeServices}}" (click)="setActiveServices()" href="#services">Services</a></li>
-        <li><a class="nav-link scrollto {{activeWork}}" (click)="setActiveWork()" href="#work">Work</a></li>
-        <li><a class="nav-link scrollto {{activePortfolio}}" (click)="setActivePortfolio()" href="#portfolio">Portfolio</a></li>
-        <li><a class="nav-link scrollto {{activeContact}}" (click)="setActiveContact()" href="#contact">Contact</a></li>
+<nav class="navbar">
+  <div class="max-width">
+      <div class="logo"><a href="#home">Ont<span>hati</span>le
+          Mo<span>dis</span>e's<span> Por</span>tfo<span>lio</span></a></div>
+      <ul class="menu">
+          <li><a href="#home" class="menu-btn{{activeHome}}" (click)="setActiveHome()">Home</a></li>
+          <li><a href="#about" class="menu-btn{{activeAbout}}" (click)="setActiveAbout()">About</a></li>
+          <li><a href="#services" class="menu-btn{{activeServices}}" (click)="setActiveServices()">Services</a></li>
+          <li><a href="#skills" class="menu-btn{{activeSkils}}" (click)="setActiveSkills()">Skills</a></li>
+          <li><a href="#projects" class="menu-btn{{activeProjects}}" (click)="setActiveProjects()">Projects</a></li>
+          <li><a href="#contact" class="menu-btn{{activeContact}}" (click)="setActiveContact()">Contact</a></li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
+      <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+      </div>
   </div>
-</header>
+</nav>
 

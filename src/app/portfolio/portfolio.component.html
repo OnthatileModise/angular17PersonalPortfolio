@@ -1,35 +1,54 @@
 <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio-mf sect-pt4 route">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="title-box text-center">
-          <h3 class="title-a">Portfolio</h3>
-          <p class="subtitle-a">My Projects and Certifications</p>
-          <div class="line-mf"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4" *ngFor="let project of projects">
-        <div class="work-box">
-          <a href="./assets/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-            <div class="work-img">
-              <img src="assets/work-1.jpg" alt="" class="img-fluid">
-            </div>
-          </a>
-          <div class="work-content">
-            <div class="row">
-              <div class="col-sm-8">
-                <h2 class="w-title">{{project?.name}}</h2>
-                <div class="w-more">
-                  <span class="w-category">{{project?.link}}</span> / <span class="w-date">{{project?.description}}</span>
-                </div>
+<!-- <section id="portfolio" class="portfolio-mf sect-pt4 route">
+
+</section>End Portfolio Section -->
+<section class="projects" id="projects">
+  <div class="max-width">
+      <h2 class="title">My Projects and Certifications</h2>
+      <div class="carousel owl-carousel">
+          <div class="card">
+              <div class="box">
+                  <img src="../../assets/JavaFx.png" alt=""/>
+                  <div class="text">JAVA FX</div>
+                  <p class="card-p">Java FX applictaion with spring-boot integration.</p>
               </div>
-            </div>
           </div>
-        </div>
+          <br/>
+          <div class="card">
+              <div class="box">
+                  <img src="../../assets/N+.png" alt=""/>
+                  <div class="text">N+ Certification</div>
+                  <p class="card-p">Certificate in Networking from CompTIA.</p>
+              </div>
+          </div>
+          <br/>
+          <div class="card">
+              <div class="box">
+                  <img src="../../assets/A+.png" alt=""/>
+                  <div class="text">A+ Certification</div>
+                  <p class="card-p">Certificate in A+ Core1 and Core2 from CompTIA</p>
+              </div>
+          </div>
+          <br/>
+          <div class="card">
+              <div class="box">
+                  <img src="../../assets/oca.png" alt=""/>
+                  <div class="text">Java SE8 Programmer |</div>
+                  <p class="card-p">An Oracle Certified Associate, Java SE 8 Programmer has demonstrated knowledge of
+                      object-oriented concepts, the Java programming language and general knowledge of
+                      Java platforms and technologies</p>
+              </div>
+          </div>
+          <br/>
+          <div class="card">
+              <div class="box">
+                  <img src="../../assets/banner.gif" alt=""/>
+                  <a href="https://github.com/OnthatileModise/">
+                      <div class="text">Git Repository</div>
+                  </a>
+                  <p class="card-p">Take a look at all the projects i have embarked on so far!</p>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
-</section><!-- End Portfolio Section -->
+</section>

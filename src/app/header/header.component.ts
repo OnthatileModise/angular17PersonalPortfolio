@@ -25,59 +25,59 @@ import {animate, keyframes, query, stagger, style, transition, trigger} from "@a
 
 export class HeaderComponent {
 
-  activeHome : string = "active"
+  activeHome : string = "-active"
   activeAbout : string = ""
   activeServices : string = ""
-  activeWork : string = ""
-  activePortfolio: string = ""
+  activeSkils : string = ""
+  activeProjects: string = ""
   activeContact : string = ""
 
   setActiveHome(){
-    this.activeHome = "active"
+    this.activeHome = "-active"
     this.activeAbout = ""
     this.activeServices = ""
-    this.activeWork = ""
-    this.activePortfolio = ""
+    this.activeSkils = ""
+    this.activeProjects = ""
     this.activeContact = ""
   }
   setActiveAbout(){
     this.activeHome = ""
-    this.activeAbout = "active"
+    this.activeAbout = "-active"
     this.activeServices = ""
-    this.activeWork = ""
-    this.activePortfolio = ""
+    this.activeSkils = ""
+    this.activeProjects = ""
     this.activeContact = ""
   }
   setActiveServices(){
     this.activeHome = ""
     this.activeAbout = ""
-    this.activeServices = "active"
-    this.activeWork = ""
-    this.activePortfolio = ""
+    this.activeServices = "-active"
+    this.activeSkils = ""
+    this.activeProjects = ""
     this.activeContact = ""
   }
-  setActiveWork(){
+  setActiveSkills(){
     this.activeHome = ""
     this.activeAbout = ""
     this.activeServices = ""
-    this.activeWork = "active"
-    this.activePortfolio = ""
+    this.activeSkils = "-active"
+    this.activeProjects = ""
     this.activeContact = ""
   }
-  setActivePortfolio(){
+  setActiveProjects(){
     this.activeHome = ""
     this.activeAbout = ""
     this.activeServices = ""
-    this.activeWork = ""
-    this.activePortfolio = "active"
+    this.activeSkils = ""
+    this.activeProjects = "-active"
     this.activeContact = ""
   }
   setActiveContact(){
     this.activeHome = ""
     this.activeAbout = ""
     this.activeServices = ""
-    this.activeWork = ""
-    this.activePortfolio = ""
-    this.activeContact = "active"
+    this.activeSkils = ""
+    this.activeProjects = ""
+    this.activeContact = "-active"
   }
 }
