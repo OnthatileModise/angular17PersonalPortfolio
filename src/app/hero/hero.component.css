@@ -8,6 +8,7 @@
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
 }
 .home .max-width{
   width: 100%;

@@ -47,7 +47,6 @@
 }
 
 
-
 .navbar .menu li a:hover{
   color: crimson;
 }
@@ -57,6 +56,14 @@
 
 .menu-btn-active{
   text-decoration: underline !important;
+}
+
+/* menu btn styling */
+.menu-btn{
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
 }
 
 @keyframes navbar {

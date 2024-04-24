@@ -1,7 +1,7 @@
 /* about section styling */
 .about{
   background-color: #fff;
-  animation: roll-in 1s ease normal;
+  animation: fade-out-down 1s ease reverse;
   animation-timeline: view();
   animation-range: entry;
 }
@@ -102,6 +102,22 @@
   100% {
     opacity: 0.9;
     transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes fade-out-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
   }
 }
 

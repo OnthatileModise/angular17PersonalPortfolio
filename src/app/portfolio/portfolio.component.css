@@ -2,7 +2,7 @@
 .projects{
   color:#fff;
   background: #111;
-  animation: flash 1s ease reverse;
+  animation: grow 1s ease normal;
   animation-timeline: view();
   animation-range: entry;
 }
@@ -82,9 +82,9 @@ transition: all 0.3s ease;
   color: #fff;
 }
 
-@keyframes flash {
-	from { opacity: 1; }
-	to { opacity: 0; }
+@keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
 
